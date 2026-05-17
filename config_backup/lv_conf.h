@@ -1,6 +1,6 @@
 /**
  * @file lv_conf.h
- * Configuration file for v9.6.0-dev
+ * Configuration file for v9.5.0
  */
 
 /*
@@ -119,9 +119,6 @@
      * RTOS task notifications can only be used when there is only one task that can be the recipient of the event.
      */
     #define LV_USE_FREERTOS_TASK_NOTIFY 1
-
-    /* Enable this to provide a custom implementation of lv_os_get_idle_percent. */
-    #define LV_OS_IDLE_PERCENT_CUSTOM 0
 #endif
 
 /*========================
@@ -610,9 +607,6 @@
 
 /** Define a custom attribute for `lv_display_flush_ready` function */
 #define LV_ATTRIBUTE_FLUSH_READY
-
-/** Define a custom attribute for `lv_display_sync_ready` function */
-#define LV_ATTRIBUTE_SYNC_READY
 
 /** Align VG_LITE buffers on this number of bytes.
  *  @note  vglite_src_buf_aligned() uses this value to validate alignment of passed buffer pointers. */
